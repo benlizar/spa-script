@@ -4,7 +4,7 @@ Scenario('Log in using Lock', (I) => {
     I.amOnPage('/');
     I.waitForVisible('#qsLoginBtn', 3);
     I.click('#qsLoginBtn');
-    I.waitForVisible('input[name="password"]', 20);
+    I.waitForVisible('input[name="password"]', 40);
     I.wait(1);
     I.fillField('input[name="email"]', 'prueba@prueba.com');
     I.fillField('input[name="password"]', 'prueba');
