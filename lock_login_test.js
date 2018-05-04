@@ -9,5 +9,5 @@ Scenario('Log in using Lock', (I) => {
     I.fillField('input[name="email"]', 'prueba@prueba.com');
     I.fillField('input[name="password"]', 'prueba');
     I.click('.auth0-lock-widget-container .auth0-lock-submit');
-    I.retry(2).waitForVisible('#qsLogoutBtn', 20);
+    I.retry(2).waitForVisible('#qsLogoutBtn', 60);
 });
